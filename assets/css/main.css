@@ -7,7 +7,6 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-
 html {
 	user-select: none;
   }
@@ -3930,8 +3929,8 @@ input, select, textarea {
 				top: 0;
 				width: 100%;
 				z-index: 10001;
-				background: #272833;
-				box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
+				/* background: #272833; */
+				/* box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125); */
 			}
 
 				#titleBar .title {
@@ -3941,6 +3940,7 @@ input, select, textarea {
 					height: 44px;
 					line-height: 44px;
 					text-align: center;
+					/* position: fixed; */
 				}
 
 					#titleBar .title a {
@@ -3973,8 +3973,10 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						background: #e44c65;
-						color: rgba(255, 255, 255, 0.5);
+						/* background: #e44c65; */
+						/* background: #181920; */
+						/* color: rgba(255, 255, 255, 0.5); */
+						color: #ffffff;
 						content: '\f0c9';
 						display: block;
 						font-size: 18px;
