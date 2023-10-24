@@ -50,8 +50,9 @@ document.addEventListener("contextmenu", function(e) {
 			$(
 				'<div id="titleBar">' +
 					'<a href="#navPanel" class="toggle"></a>' +
-					'<span class="title">' + $('#logo').html() + '</span>' +
+					'<span class="title">' + "Nicholas Christopher" + '</span>' +
 				'</div>'
+				
 			)
 				.appendTo($body);
 
