@@ -26,7 +26,7 @@ document.addEventListener("contextmenu", function(e) {
 		$window.on('load', function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
-			}, 1200);
+			}, 1000);
 		});
 
 	// Touch mode.
