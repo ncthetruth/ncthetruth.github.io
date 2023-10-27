@@ -35,7 +35,8 @@ document.addEventListener("contextmenu", function(e) {
 
 	// Scrolly links.
 		$('.scrolly').scrolly({
-			speed: 1000
+			speed: 1000,
+			passive: true
 		});
 
 	// Dropdowns.
