@@ -3,6 +3,11 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+
+var linkElement = document.createElement('link');
+linkElement.rel = 'shortcut icon';
+linkElement.href = 'images/miko_0.25x.png';
+document.head.appendChild(linkElement);
   
 document.addEventListener("contextmenu", function(e) {
 	e.preventDefault();
