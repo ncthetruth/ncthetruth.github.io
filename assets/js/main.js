@@ -1,6 +1,6 @@
 var linkElement = document.createElement('link');
 linkElement.rel = 'shortcut icon';
-linkElement.href = 'images/miko_0.25x.png';
+linkElement.href = 'images/mikoicon.png';
 document.head.appendChild(linkElement);
   
 document.addEventListener("contextmenu", function(e) {
