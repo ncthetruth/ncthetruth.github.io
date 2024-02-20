@@ -2,7 +2,50 @@ var linkElement = document.createElement('link');
 linkElement.rel = 'shortcut icon';
 linkElement.href = 'images/mikoicon.png';
 document.head.appendChild(linkElement);
-  
+
+const texts = ["Nicholas Christopher", "Full Stack Developer", "Data Specialist"];
+const textSpan = document.getElementById('typed-text');
+const cursorSpan = document.getElementById('cursor');
+
+let textIndex = 0;
+let idx = 0;
+
+function type() {
+    if (idx < texts.length) {
+        const currentText = texts[idx];
+        if (textIndex < currentText.length) {
+            textSpan.textContent += currentText.charAt(textIndex);
+            textIndex++;
+            setTimeout(type, 50);
+        } else {
+            setTimeout(erase, 2000);
+        }
+    } else {
+        idx = 0;
+    }
+}
+
+function erase() {
+    if (textIndex >= 0) {
+        const currentText = texts[idx];
+        const newText = currentText.substring(0, textIndex - 1);
+        textSpan.textContent = newText;
+        textIndex--;
+        setTimeout(erase, 50);
+    } else {
+        textIndex = 0;
+        idx++;
+        if (idx >= texts.length) {
+            idx = 0;
+        }
+        setTimeout(type, 500);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(type, 1000);
+});
+
 document.addEventListener("contextmenu", function(e) {
 	e.preventDefault();
   });
